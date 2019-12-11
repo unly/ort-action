@@ -5,7 +5,7 @@ const Docker = dockerCLI.Docker;
 
 const docker = new Docker();
 
-function main() {    
+function main() {
     var pw = process.env.SECRETS_DOCKER_PW
     console.log(pw)
     if (pw == 'password') {

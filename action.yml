@@ -2,6 +2,6 @@ name: "ort-action"
 
 runs:
   env:
-    DOCKER_PW: ${{ secrets.DOCKER_PW }}
+    DOCKER_PW: "${{ secrets.DOCKER_PW }}"
   using: "node12"
   main: "docker.js"
