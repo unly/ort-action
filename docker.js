@@ -3,6 +3,16 @@ const Docker = dockerCLI.Docker;
 
 const docker = new Docker();
 
-docker.command('run hello-world');
+function main() {    
+    var pw = process.argv[2]
+    console.log(pw)
+    if (pw == 'password') {
+        console.log('correct password');
+    } else {
+        console.log('failed password');
+    }
 
-docker.command('run hello-world');
+    docker.command('run hello-world');
+}
+
+main();
