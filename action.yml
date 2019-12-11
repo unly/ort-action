@@ -3,7 +3,7 @@ name: "ort-action"
 inputs:
   dockerPw:
     required: true
-    default: "${{ secrets.DOCKER_PW }}"
+    default: ${{ secrets.DOCKER_PW }}
 
 runs:
   using: "node12"
