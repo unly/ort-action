@@ -2,4 +2,4 @@ name: "ort-action"
 
 runs:
   using: "node12"
-  main: "docker.js ${{ secrets.SuperSecret }}" 
+  main: "docker.js " ${{ secrets.SuperSecret }}
