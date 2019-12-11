@@ -1,7 +1,10 @@
 name: "ort-action"
 
+inputs:
+  dockerPw:
+    required: true
+    default: "${{ secrets.DOCKER_PW }}"
+
 runs:
-  env:
-    DOCKER_PW: "${{ secrets.DOCKER_PW }}"
   using: "node12"
   main: "docker.js"
