@@ -1,3 +1,5 @@
+const core = require('@actions/core');
+const github = require('@actions/github');
 const dockerCLI = require('docker-cli-js');
 const Docker = dockerCLI.Docker;
 

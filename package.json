@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/unly/ort-action#readme",
   "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^2.0.0",
     "docker-cli-js": "^2.6.0"
   }
 }
